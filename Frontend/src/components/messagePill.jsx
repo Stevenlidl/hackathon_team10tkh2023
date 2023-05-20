@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import Card from 'react-bootstrap/Card';
-import './messagePill.css';
+import './messages.css';
 
 export function MessagePill({ type, datetime, by, message }) {
     return (
-        <>
-            <Card className={type === "sent" ? "message-sent" : "message-received"}>
+        <div className={type === "sent" ? "message-sent" : "message-received"}>
+            <Card className={type === "sent" ? "message-sent-pill" : "message-received-pill"}>
                 <Card.Body>
                     <Card.Title>
                         {by}
@@ -16,6 +16,6 @@ export function MessagePill({ type, datetime, by, message }) {
                     {datetime}
                 </Card.Body>
             </Card>
-        </>
+        </div>
     )
 }
