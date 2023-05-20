@@ -29,6 +29,8 @@
 
 .message-board {
     width: 100%;
+    max-height: calc(100vh - 150px);
+    overflow-x: scroll;
 }
 
 .message-input-box {
