@@ -7,7 +7,7 @@ import { apiKey } from '../constants';
 
 export default function Map() {
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: apiKey
+        googleMapsApiKey: process.env.GOOGLE_MAP_API_KEY
     });
 
     console.log(apiKey)
