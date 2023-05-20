@@ -81,7 +81,7 @@ function Home() {
           }
         </Row>
       </Container>
-      <Container className="buttonContainer mt-4">
+      <Container className="buttonContainer m-5">
         <Button variant="danger">Get Help</Button>
       </Container>
     </Container>

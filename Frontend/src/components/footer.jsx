@@ -12,7 +12,7 @@ export default function Footer() {
 						<Col md={6}>
 							<div className="widget">
 								<a href="#">
-									<img src="/public/tenant-safe-logo.png" />
+									<img src="/tenant-safe-logo.png" />
 								</a>
 							</div>
 						</Col>
