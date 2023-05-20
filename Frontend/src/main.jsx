@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import Layout from './pages/layout';
+import FindHelp from './pages/help';
 
 //Creating Router instance
 const router = createBrowserRouter([
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/help",
-        element: <div>Find Help page</div>
+        element: <FindHelp />
       },
       {
         path: "/community",
