@@ -1,0 +1,45 @@
+.message-sent {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+.message-received {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.message-sent-pill {
+    background-color: blue;
+    color: white;
+    max-width: 320px;
+    border-radius: 30px;
+}
+
+.message-received-pill {
+    background-color: grey;
+    color: black;
+    max-width: 320px;
+    border: 0px;
+    border-radius: 30px;
+}
+
+.message-board {
+    width: 100%;
+    max-height: calc(100vh - 150px);
+    overflow-x: scroll;
+}
+
+.message-input-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    position: fixed;
+    bottom: 0px;
+    background: lightgray;
+}
