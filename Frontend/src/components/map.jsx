@@ -6,7 +6,7 @@ import MapMarker from './locationMarker';
 
 export default function Map() {
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyBUvRnziLNJA3Ninbjh0iJ-nl_BDpgyOA0"
+        googleMapsApiKey: "YOUR_API_KEY"
     });
 
     return (
