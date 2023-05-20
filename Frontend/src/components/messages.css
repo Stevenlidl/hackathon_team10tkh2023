@@ -16,12 +16,15 @@
     background-color: blue;
     color: white;
     max-width: 320px;
+    border-radius: 30px;
 }
 
 .message-received-pill {
     background-color: grey;
     color: black;
     max-width: 320px;
+    border: 0px;
+    border-radius: 30px;
 }
 
 .message-board {
