@@ -12,9 +12,11 @@ export default function Footer() {
 				<Container>
 					<Row>
 						<Col md={6}>
-							<a href="#">
-								<img src="/public/tenant-safe-logo.png" />
-							</a>
+							<div className="widget">
+								<a href="#">
+									<img src="/public/tenant-safe-logo.png" />
+								</a>
+							</div>
 						</Col>
 						<Col md={3}>
 							<div className="widget">
