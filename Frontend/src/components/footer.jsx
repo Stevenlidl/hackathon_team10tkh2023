@@ -1,9 +1,7 @@
 import { 
-    Container, Nav, Navbar, Row, Col,
-    Button
+    Container, Row, Col
 } from 'react-bootstrap';
 import '../css/footer.css';
-
 
 export default function Footer() {
     return (
