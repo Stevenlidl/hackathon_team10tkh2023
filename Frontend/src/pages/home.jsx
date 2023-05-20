@@ -1,56 +1,91 @@
 import React from "react";
-import { useState } from "react";
-// import Accordion from 'react-bootstrap/Accordion';
+import { Container, Row, Col, Accordion, Button } from "react-bootstrap";
+import { row1, row2, row3, row4 } from "../faqData";
+import '../css/home.css';
 
 //textmetrics
 function Home() {
-    const [selected, setSelected] = useState(null)
 
-    const toggle = (i) => {
-        if(selected == i){
-            return setSelected(null)
-        }
-        setSelected(i)
-    }
-    return (
-        <div className='wrapper'>
-          <div className='accordion'>
-          {data.map((item,i) => (
-            <div className='item'>
-                <div className='title' onClick={()=> toggle (i)}>
-                    <h6>{item.question}</h6>
-                    {/* <FontAwesomeIcon icon="fa-solid fa-chevron-up" /> */}
-                       <span>{selected === i ? '⌄' : '^' } </span>
-                         </div>
-                     <div className ={selected === i ?  'content show' : 'content' }>{item.answer}</div>
-                </div>
-         ))}
-            </div>
-          </div>
-    );
-  }
+  return (
+    <Container className='wrapper'>
+      <Container className="imgContainer">
+        <img className="img" src="/images/housing.png" />
+      </Container>
+      <Container className="accordion">
+        <Row>
+          {
+            row1.map((item, i) => {
+              return (
+                <Col lg={4} >
+                  <Accordion>
+                    <div className="item">
+                      <Accordion.Item eventKey={i} ></Accordion.Item>
+                      <Accordion.Header className="itemHeader">{item.question}</Accordion.Header>
+                      <Accordion.Body>{item.answer}</Accordion.Body>
+                    </div>
+                  </Accordion>
+                </Col>
+              )
+            })
+          }
+        </Row>
+        <Row>
+          {
+            row2.map((item, i) => {
+              return (
+                <Col lg={4}>
+                  <Accordion >
+                    <div className="item">
+                      <Accordion.Item eventKey={i} ></Accordion.Item>
+                      <Accordion.Header bsPrefix="itemHeader">{item.question}</Accordion.Header>
+                      <Accordion.Body>{item.answer}</Accordion.Body>
+                    </div>
+                  </Accordion>
+                </Col>
+              )
+            })
+          }
+        </Row>
+        <Row>
+          {
+            row3.map((item, i) => {
+              return (
+                <Col lg={4}>
+                  <Accordion>
+                    <div className="item">
+                      <Accordion.Item eventKey={i} ></Accordion.Item>
+                      <Accordion.Header>{item.question}</Accordion.Header>
+                      <Accordion.Body>{item.answer}</Accordion.Body>
+                    </div>
+                  </Accordion>
+                </Col>
+              )
+            })
+          }
+        </Row>
+        <Row>
+          {
+            row4.map((item, i) => {
+              return (
+                <Col lg={4}>
+                  <Accordion>
+                    <div className="item">
+                      <Accordion.Item eventKey={i} ></Accordion.Item>
+                      <Accordion.Header>{item.question}</Accordion.Header>
+                      <Accordion.Body>{item.answer}</Accordion.Body>
+                    </div>
+                  </Accordion>
+                </Col>
+              )
+            })
+          }
+        </Row>
+      </Container>
+      <Container className="buttonContainer mt-4">
+        <Button variant="danger">Get Help</Button>
+      </Container>
+    </Container>
+  );
+};
 
-
-  const data = [
-    {
-        question: 'What is housing court?',
-        answer: 'The New York City Housing Court is a Part of the Civil Court where landlords/owners and tenants go to solve their housing problems.'
-        
-
-
-
-
-
-    },
-    {
-    question: 'What should I do if I receive an eviction notice?',
-    answer: 'The New York City Housing Court is a Part of the Civil Court where landlords/owners and tenants go to solve their housing problems.'
-    
-
-    }
-
-  ]
-
-
-  
-  export default Home;
+export default Home;
