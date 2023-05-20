@@ -10,6 +10,7 @@ export default function Map() {
         googleMapsApiKey: apiKey
     });
 
+    console.log(apiKey)
     return (
         <div>
             {isLoaded &&
