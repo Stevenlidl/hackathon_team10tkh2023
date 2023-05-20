@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import Layout from './pages/layout';
+import { CommunityBoard } from './pages/community';
 
 //Creating Router instance
 const router = createBrowserRouter([
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/community",
-        element: <div>Community page</div>
+        element: <CommunityBoard />
       }
     ]
   }

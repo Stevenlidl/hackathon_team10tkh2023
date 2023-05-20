@@ -1,0 +1,14 @@
+.message-sent {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: blue;
+    color: white;
+    max-width: 320px;
+}
+
+.message-received {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    color: black;
+}
