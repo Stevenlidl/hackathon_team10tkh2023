@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 // import Accordion from 'react-bootstrap/Accordion';
 import SimpleImageSlider from "react-simple-image-slider";
-import '../css/home.css';
 
 const images = [
     { url: "images/1.png" },
