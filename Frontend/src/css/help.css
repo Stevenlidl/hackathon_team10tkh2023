@@ -1,0 +1,55 @@
+.helpContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.helpHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+    font-size: 1.1em;
+}
+
+.mapContainer {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mapBox {
+    width: 80%;
+    height: 100%;
+}
+
+.helpBoroughs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.boroughs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.boroughBox {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.2em;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.boroughBox:hover {
+    background-color: var(--blue);
+    color: white;
+}

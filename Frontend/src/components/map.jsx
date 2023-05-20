@@ -4,21 +4,29 @@ import {
 import locations from '../mapData';
 import MapMarker from './locationMarker';
 import { apiKey } from '../constants';
+import { useMemo, useRef } from 'react';
+import { Container } from 'react-bootstrap';
 
-export default function Map() {
+export default function Map(props) {
+    const nycCenter = useMemo(() => ({ lat: 40.746, lng: -73.94 }), []);
+    const mapRef = useRef();
+
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: apiKey
     });
 
-    console.log(apiKey)
+    const onLoad = (map) => mapRef.current = map;
+    console.log(apiKey);
+
     return (
-        <div>
+        <Container className='mapContainer mb-5'>
             {isLoaded &&
                 <GoogleMap
                     zoom={10.58}
-                    center={{ lat: 40.755, lng: -73.94 }}
-                    mapContainerStyle={{ height: "500px", width: "500px" }}
+                    center={nycCenter}
+                    mapContainerClassName='mapBox'
                     clickableIcons={false}
+                    onLoad={onLoad}
                     options={{
                         fullscreenControl: false,
                         mapTypeControl: false,
@@ -47,6 +55,6 @@ export default function Map() {
                     }
                 </GoogleMap>
             }
-        </div>
+        </Container>
     )
 };

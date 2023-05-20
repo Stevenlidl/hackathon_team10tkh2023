@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-    Marker, InfoWindow, MarkerClusterer
+    Marker, InfoWindowF,
 } from '@react-google-maps/api';
 
 export default function MapMarker(props) {
@@ -14,16 +14,16 @@ export default function MapMarker(props) {
                 clusterer={props.clusterer}
             />
             :
-            <InfoWindow
+            <InfoWindowF
                 position={props.position}
                 onCloseClick={() => setShow(!show)}
             >
-                <div>
+                <div style={{fontSize: "smaller"}}>
                     <p style={{ fontWeight: "bold" }}>{props.name}</p>
                     <p>{props.address}</p>
                     <p>{props.phone}</p>
                     <a href={props.website}>View website</a>
                 </div>
-            </InfoWindow>
+            </InfoWindowF>
     )
 }
