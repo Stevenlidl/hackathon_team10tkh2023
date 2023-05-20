@@ -28,7 +28,7 @@ export function CommunityBoard() {
     }
 
     return (
-        <div>
+        <div className="community-page">
             <MessageBoard messages={messages} />
             <ChatBox onSend={onSend} />
         </div>
