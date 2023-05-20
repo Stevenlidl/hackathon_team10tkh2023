@@ -4,10 +4,10 @@ import Footer from '../components/footer';
 
 export default function Layout() {
     return (
-        <footer>
+        <div>
             <NavBar />
             <Outlet />
             <Footer />
-        </footer>
+        </div>
     )
 }
