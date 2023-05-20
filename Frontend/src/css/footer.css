@@ -7,6 +7,12 @@
 	padding: 0;
 	margin: 0;
 }
+.main-footer ul li span {
+	color: #fff;
+}
+.main-footer ul li img {
+	margin-right: 3px;
+}
 .main-footer ul li + li {
 	padding-top: 7px;
 }

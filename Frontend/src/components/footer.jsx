@@ -12,7 +12,7 @@ export default function Footer() {
 						<Col md={6}>
 							<div className="widget">
 								<a href="#">
-									<img src="/public/tenant-safe-logo.png" />
+									<img src="/images/tenant-safe-logo.png" />
 								</a>
 							</div>
 						</Col>
@@ -30,8 +30,8 @@ export default function Footer() {
 							<div className="widget">
 								<h4>Contact Us</h4>
 								<ul>
-									<li><a href="#"><i className=''></i> Request Help Call 311</a></li>
-									<li><a href="#"><i className=''></i> Hotline Help 718-557-1379</a></li>
+									<li><img width="20" src="/images/phone-plus-icon.png" /> <span>Request Help Call 311</span></li>
+									<li><img width="20" src="/images/phone-plus-icon.png" /> <span>Hotline Help 718-557-1379</span></li>
 								</ul>
 
 							</div>
