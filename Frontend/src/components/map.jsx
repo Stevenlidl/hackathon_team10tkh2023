@@ -11,7 +11,7 @@ export default function Map() {
     console.log(process.env.NODE_ENV)
     console.log("2: -----------" + import.meta.env.VITE_GOOGLE_MAP_API_KEY)
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: process.env.VITE_GOOGLE_MAP_API_KEY
+        googleMapsApiKey: apiKey
     });
 
     console.log(apiKey)
