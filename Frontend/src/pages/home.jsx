@@ -1,7 +1,13 @@
 import React from "react";
 import { useState } from "react";
 // import Accordion from 'react-bootstrap/Accordion';
+import SimpleImageSlider from "react-simple-image-slider";
 
+const images = [
+    { url: "images/1.png" },
+    { url: "images/2.png" },
+    { url: "images/3.png" },
+];
 //textmetrics
 function Home() {
     const [selected, setSelected] = useState(null)
@@ -13,10 +19,20 @@ function Home() {
         setSelected(i)
     }
     return (
-        <div className='wrapper'>
+        <>
+            <div className="slider-wrapper">
+                <SimpleImageSlider
+                    width={1200}
+                    height={504}
+                    images={images}
+                    showBullets={true}
+                    showNavs={true}
+                />
+            </div>
+            <div className='wrapper'>
           <div className='accordion'>
           {data.map((item,i) => (
-            <div className='item'>
+            <div key={i} className='item'>
                 <div className='title' onClick={()=> toggle (i)}>
                     <h6>{item.question}</h6>
                     {/* <FontAwesomeIcon icon="fa-solid fa-chevron-up" /> */}
@@ -27,6 +43,7 @@ function Home() {
          ))}
             </div>
           </div>
+        </>
     );
   }
 

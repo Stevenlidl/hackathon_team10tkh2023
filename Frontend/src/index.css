@@ -1,7 +1,7 @@
 
 .wrapper{
     display:flex;
-    height: 100vh;
+    margin-top: 35px;
     width: 100vw;
     justify-content:center;
     align-items: center;
@@ -36,11 +36,17 @@ transition: all 0.5s cubic-bezier(0,1,0,1);
 font-size: 12px;
 }
 
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .content.show{
     height: auto;
     max-height: 9999px; 
     transition: all 0.5s cubic-bezier(0,1,0,1);
     font-size: 12px;
+}
 
 * {
   padding: 0;
