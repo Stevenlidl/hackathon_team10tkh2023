@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import Layout from './pages/layout';
 import { CommunityBoard } from './pages/community';
+import FindHelp from './pages/help';
 
 //Creating Router instance
 const router = createBrowserRouter([
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
         element: <div>Home page</div>
       },
       {
-        path: "/map",
-        element: <div>Map page</div>
+        path: "/help",
+        element: <FindHelp />
       },
       {
         path: "/community",
