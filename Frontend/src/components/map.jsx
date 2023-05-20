@@ -3,10 +3,11 @@ import {
 } from '@react-google-maps/api';
 import locations from '../mapData';
 import MapMarker from './locationMarker';
+import { apiKey } from '../constants';
 
 export default function Map() {
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyBUvRnziLNJA3Ninbjh0iJ-nl_BDpgyOA0"
+        googleMapsApiKey: apiKey
     });
 
     return (
