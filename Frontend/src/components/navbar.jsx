@@ -1,6 +1,5 @@
 import { 
     Container, Nav, Navbar,
-    Button
 } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 
@@ -24,4 +23,4 @@ export default function NavBar() {
             </Container>
         </Navbar>
     )
-}
+};

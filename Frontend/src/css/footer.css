@@ -34,11 +34,11 @@
 	text-decoration: underline;
 }
 .main-footer .top-section {
-	background-color: #174882;
+	background-color: var(--dark-blue);
 	padding: 3rem 0;
 }
 .main-footer .bottom-section {
-	background-color: #000024;
+	background-color: var(--black);
 	padding: 10px 0;
 	text-align: center;
 }

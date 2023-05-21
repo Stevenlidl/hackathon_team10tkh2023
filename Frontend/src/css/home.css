@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-
 }
 
 .imgContainer {
@@ -27,7 +26,7 @@ border: 1px solid black;
 border-radius: 10px;
 position: relative;
 overflow: hidden;
-background-color: #F9F7F0;
+background-color: var(--off-white);
 min-height: 10em;
 box-shadow: 1px 4px 3px darkgray;
 }
@@ -36,7 +35,7 @@ box-shadow: 1px 4px 3px darkgray;
     content: '';
     width: 100%;
     height: 2em;
-    background-color: #4E92E1;
+    background-color: var(--light-blue);
     position: absolute;
     top: 0;
     left: 0;
@@ -46,4 +45,18 @@ box-shadow: 1px 4px 3px darkgray;
 
 .buttonContainer {
     text-align: center;
+}
+
+.helpBtn {
+    background-color: var(--red);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    transition: 0.2s ease-out;
+}
+
+.helpBtn:hover {
+    background-color: var(--red);
+    opacity: 0.92;
 }
