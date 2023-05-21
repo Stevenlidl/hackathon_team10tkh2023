@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Map from '../components/map';
 import '../css/help.css';
 
@@ -11,22 +11,6 @@ export default function FindHelp() {
                 <p style={{fontWeight: "bold"}}>Please the call office because walk-in services may be unavailable.</p>
             </Container>
             <Map />
-            <Container className='helpBoroughs'>
-                <h1>Find help by borough</h1>
-                <Container className='boroughs'>
-                    <Row style={{width: "70%"}} className='justify-content-center'>
-                        <Col lg={5} className='boroughBox m-2'>Bronx</Col>
-                        <Col lg={5} className='boroughBox m-2'>Brooklyn</Col>
-                    </Row>
-                    <Row style={{width: "70%"}} className='justify-content-center'>
-                        <Col lg={5} className='boroughBox m-2'>Manhattan</Col>
-                        <Col lg={5} className='boroughBox m-2'>Queens</Col>
-                    </Row>
-                    <Row style={{width: "70%"}} className='justify-content-center'>
-                        <Col lg={5} className='boroughBox m-2'>Staten Island</Col>
-                    </Row>
-                </Container>
-            </Container>
         </Container>
     )
-}
+};

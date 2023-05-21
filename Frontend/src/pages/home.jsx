@@ -82,7 +82,7 @@ function Home() {
         </Row>
       </Container>
       <Container className="buttonContainer m-5">
-        <Button variant="danger">Get Help</Button>
+        <button className="helpBtn">Get Help</button>
       </Container>
     </Container>
   );
