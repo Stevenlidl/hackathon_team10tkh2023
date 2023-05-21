@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-    Marker, InfoWindowF,
+    Marker, InfoWindowF
 } from '@react-google-maps/api';
 
 export default function MapMarker(props) {
@@ -22,7 +22,7 @@ export default function MapMarker(props) {
                     <p style={{ fontWeight: "bold" }}>{props.name}</p>
                     <p>{props.address}</p>
                     <p>{props.phone}</p>
-                    <a href={props.website}>View website</a>
+                    <a href={props.website}>View website</a><span className='mx-2'><button className='mapBtn' onClick={() => {props.saveOffice(); setShow(!show);}}>Get Directions</button></span>
                 </div>
             </InfoWindowF>
     )
