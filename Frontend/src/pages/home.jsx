@@ -16,7 +16,7 @@ function Home() {
           {
             row1.map((item, i) => {
               return (
-                <Col lg={4} >
+                <Col lg={4} key={i} >
                   <Accordion>
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
@@ -33,7 +33,7 @@ function Home() {
           {
             row2.map((item, i) => {
               return (
-                <Col lg={4}>
+                <Col lg={4} key={i + 100}>
                   <Accordion >
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
@@ -50,7 +50,7 @@ function Home() {
           {
             row3.map((item, i) => {
               return (
-                <Col lg={4}>
+                <Col lg={4} key={i + 200}>
                   <Accordion>
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
@@ -67,7 +67,7 @@ function Home() {
           {
             row4.map((item, i) => {
               return (
-                <Col lg={4}>
+                <Col lg={4} key={i + 300}>
                   <Accordion>
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
