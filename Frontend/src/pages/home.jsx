@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Accordion, Button } from "react-bootstrap";
-import { row1, row2, row3, row4 } from "../faqData";
+import { useNavigate } from 'react-router-dom';
+import { row1, row2, row3, row4, ListAnswer1, ListAnswer2 } from "../faqData";
 import '../css/home.css';
 
-//textmetrics
 function Home() {
+  const navigate = useNavigate();
 
   return (
     <Container className='wrapper'>
@@ -21,7 +22,13 @@ function Home() {
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
                       <Accordion.Header className="itemHeader">{item.question}</Accordion.Header>
-                      <Accordion.Body>{item.answer}</Accordion.Body>
+                      <Accordion.Body className={i === 1 ? "boldAnswer1" : ""}>
+                        {
+                          i === 0 ?
+                            <ListAnswer1 /> :
+                            item.answer
+                        }
+                      </Accordion.Body>
                     </div>
                   </Accordion>
                 </Col>
@@ -38,7 +45,13 @@ function Home() {
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
                       <Accordion.Header bsPrefix="itemHeader">{item.question}</Accordion.Header>
-                      <Accordion.Body>{item.answer}</Accordion.Body>
+                      <Accordion.Body>
+                        {
+                          i === 2 ?
+                          <ListAnswer2 /> :
+                          item.answer
+                        }
+                      </Accordion.Body>
                     </div>
                   </Accordion>
                 </Col>
@@ -72,7 +85,17 @@ function Home() {
                     <div className="item">
                       <Accordion.Item eventKey={i} ></Accordion.Item>
                       <Accordion.Header>{item.question}</Accordion.Header>
-                      <Accordion.Body>{item.answer}</Accordion.Body>
+                      <Accordion.Body>
+                        {
+                          i < 1 || 1 < i ?
+                            <p>
+                              {item.answer[0]}
+                              <br />
+                              <a target="_blank" href={item.answer[1]}>{item.answer[1]}</a>
+                            </p> :
+                            <p>{item.answer}</p>
+                        }
+                      </Accordion.Body>
                     </div>
                   </Accordion>
                 </Col>
@@ -82,7 +105,7 @@ function Home() {
         </Row>
       </Container>
       <Container className="buttonContainer m-5">
-        <button className="helpBtn">Get Help</button>
+        <button onClick={() => (navigate("/help#"))} className="helpBtn">Get Help</button>
       </Container>
     </Container>
   );

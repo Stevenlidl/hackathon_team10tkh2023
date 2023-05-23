@@ -1,3 +1,38 @@
+export function ListAnswer1() {
+    return (
+        <>
+            <p>A Housing Court Judge can order: </p>
+            <ul>
+                <li>repairs</li>
+                <li>a tenant out of an apartment</li>
+                <li>a tenant back in the apartment</li>
+                <li>rent to be paid</li>
+            </ul>
+            <p>Tenants start cases in Housing Court to: </p>
+            <ul>
+                <li>get repairs,</li>
+                <li>move back in after an eviction, </li>
+                <li>stop harassment </li>
+            </ul>
+        </>
+    )
+}
+
+export function ListAnswer2() {
+    return (
+        <>
+            <p>According to N.Y. Real Prop N.Y. Real Prop. §226-c, your landlord must give you the following  notice</p>
+            <ul>
+                <li>30 days’ notice: if the tenant has been occupying for a year or at one point had a lease of at least one year</li>
+                <li>60 days’ notice: Tenants occupying from one to two years and leaseholders of one to two-year leases</li>
+                <li>90 days’ notice: Tenants occupying more than two years or having leases of two years or more: 90 days’ notice.</li>
+            </ul>
+        </>
+    )
+}
+
+// 
+
 export const row1 = [
     {
         question: 'What is housing court?',
@@ -46,8 +81,8 @@ export const row3 = [
 export const row4 = [
     {
         question: 'What if I can’t pay my rent?',
-        answer: `In NYC, tenants can apply to the NYC Human Resources Administration (HRA) for a One Shot Deal to cover rent arrears. This can be helpful if you don’t get money through ERAP or if ERAP assistance doesn’t cover all of the rent you owe. To get a One Shot Deal, you do not have to show that your rent debt is related to the pandemic. You may also qualify for an ongoing rent subsidy under the City’s FHEPS program. 
-      https://www.nyc.gov/site/hra/help/affordable-housing.page`
+        answer: [`In NYC, tenants can apply to the NYC Human Resources Administration (HRA) for a One Shot Deal to cover rent arrears. This can be helpful if you don’t get money through ERAP or if ERAP assistance doesn’t cover all of the rent you owe. To get a One Shot Deal, you do not have to show that your rent debt is related to the pandemic. You may also qualify for an ongoing rent subsidy under the City’s FHEPS program.`,
+            `https://www.nyc.gov/site/hra/help/affordable-housing.page`]
     },
     {
         question: 'How can I get more information?',
@@ -55,9 +90,8 @@ export const row4 = [
     },
     {
         question: 'What if I can’t get legal assistance? ',
-        answer: `Due to lack of funding, legal support cannot be guaranteed. But that doesn’t me you should not fight to stay! This document is for tenants without lawyers representing them in a case in Housing Court. It was developed by attorneys and tenant organizers within the Right to Counsel NYC Coalition. This packet is not a substitute for effective legal representation and none of the material in this packet is legal advice.
-  
-      https://assets.nationbuilder.com/righttocounselnyc/pages/1342/attachments/original/1664821814/Right_to_Counsel_-_Tenant_Self_Defense_Resource_Guide_-_FINAL.docx_%281%29.pdf?1664821814`
+        answer: [`Due to lack of funding, legal support cannot be guaranteed. But that doesn’t me you should not fight to stay! This document is for tenants without lawyers representing them in a case in Housing Court. It was developed by attorneys and tenant organizers within the Right to Counsel NYC Coalition. This packet is not a substitute for effective legal representation and none of the material in this packet is legal advice.`,
+            `https://assets.nationbuilder.com/righttocounselnyc/pages/1342/attachments/original/1664821814/Right_to_Counsel_-_Tenant_Self_Defense_Resource_Guide_-_FINAL.docx_%281%29.pdf?1664821814`]
     },
 ]
 
